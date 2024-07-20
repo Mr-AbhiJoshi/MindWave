@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Community{% endblock title %}
+
+{% block body %}
+<style>
+  /* Custom CSS styles for this page */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .join-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+</style>
+<!-- Join Community Section -->
+<section class="join-container">
+    <h2 class="text-center mb-4">Join Our Support Community</h2>
+    <p class="text-center mb-4">Connect with others who understand your journey and share experiences.</p>
+    <form class="text-center">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Your Name">
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" placeholder="Your Email">
+      </div>
+      <button type="submit" class="btn btn-primary">Join Community</button>
+    </form>
+  </section>
+{% endblock body %}

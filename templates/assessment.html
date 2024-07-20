@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block title %}Assessment{% endblock title %}
+
+{% block body %}
+<style>
+  /* Custom CSS styles for this page */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .assessment-container {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+</style>
+<!-- Assessment Section -->
+<section class="assessment-container py-5">
+    <h2 class="text-center mb-4">Mental Health Self-Assessment</h2>
+    <p class="text-center mb-4">Take our assessment to understand your current mental well-being.</p>
+    <form class="text-center">
+        <div class="form-group">
+          <label for="question1">Question 1: Over the past week, how often have you felt anxious or overwhelmed?</label>
+          <select class="form-control" id="question1">
+            <option value="not-at-all">Not at all</option>
+            <option value="rarely">Rarely</option>
+            <option value="sometimes">Sometimes</option>
+            <option value="often">Often</option>
+            <option value="almost-always">Almost always</option>
+          </select>
+        </div>
+      
+        <div class="form-group">
+          <label for="question2">Question 2: How would you rate your overall quality of sleep in the past month?</label>
+          <select class="form-control" id="question2">
+            <option value="poor">Poor</option>
+            <option value="fair">Fair</option>
+            <option value="good">Good</option>
+            <option value="very-good">Very good</option>
+            <option value="excellent">Excellent</option>
+          </select>
+        </div>
+      
+        <div class="form-group">
+          <label for="question3">Question 3: Are you experiencing any major life changes or stressors currently?</label>
+          <textarea class="form-control" id="question3" rows="3"></textarea>
+        </div>
+      
+        <div class="form-group">
+          <label for="question4">Question 4: How often do you engage in physical activity or exercise?</label>
+          <select class="form-control" id="question4">
+            <option value="rarely">Rarely</option>
+            <option value="once-a-week">Once a week</option>
+            <option value="2-3-times-a-week">2-3 times a week</option>
+            <option value="daily">Daily</option>
+            <option value="not-at-all">Not at all</option>
+          </select>
+        </div>
+      
+        <div class="form-group">
+          <label for="question5">Question 5: How well are you able to cope with stressors in your life?</label>
+          <select class="form-control" id="question5">
+            <option value="poorly">Poorly</option>
+            <option value="fairly-well">Fairly well</option>
+            <option value="well">Well</option>
+            <option value="very-well">Very well</option>
+            <option value="excellently">Excellently</option>
+          </select>
+        </div>
+      
+        <div class="form-group">
+          <label for="question6">Question 6: How would you describe your current level of happiness or contentment?</label>
+          <select class="form-control" id="question6">
+            <option value="very-unhappy">Very unhappy</option>
+            <option value="unhappy">Unhappy</option>
+            <option value="neutral">Neutral</option>
+            <option value="happy">Happy</option>
+            <option value="very-happy">Very happy</option>
+          </select>
+        </div>
+      
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+      </form>
+  </section>
+{% endblock body %}

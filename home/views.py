@@ -16,3 +16,21 @@ def services(request):
 
 def contact(request):
     return render(request, 'contact.html')
+
+def avatar(request):
+    return render(request, 'avatar.html')
+
+def vWorld(request):
+    return render(request, 'vworld.html')
+
+def community(request):
+    return render(request, 'community.html')
+
+def therapist(request):
+    return render(request, 'therapist.html')
+
+def assessment(request):
+    return render(request, 'assessment.html')
+
+def resources(request):
+    return render(request, 'resources.html')
