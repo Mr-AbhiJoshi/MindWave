@@ -3,38 +3,45 @@
 {% block title %}Home{% endblock title %}
 
 {% block body %}
-  <section class="hero text-center py-5">
+<section class="hero text-center py-5">
     <div class="container">
       <h2>Welcome to MindWave</h2>
       <p>Your gateway to mental health awareness and well-being.</p>
-      <a href="#" class="btn btn-primary">Get Started</a>
+      <a href="#how-it-works" class="btn btn-primary">Get Started</a>
     </div>
   </section>
 
-  <section class="about py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <h2>About Us</h2>
-          <p>We are aiming to provide accessible mental health education to university students, aiding in their well-being and success. We understand the unique challenges that come with academic pursuits and the importance of mental wellness. MindWave is here to provide you with resources, support, and a sense of community as you navigate through the complexities of university life. Let's embark on this journey towards a healthier mind, together.</p>
-        </div>
-        <div class="col-lg-6">
-          <img src="https://images.unsplash.com/photo-1604480132736-44c188fe4d20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=350&q=80" alt="About Us Image" class="img-fluid">
-        </div>
+  <!--Caraousel section-->
+  <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="5000">
+        <img src="static/front1.jpg" width="400" height="500" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="static/front2.jpg" width="400" height="500" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="static/front3.jpg" width="400" height="500" class="d-block w-100" alt="...">
       </div>
     </div>
-  </section>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden"></span>
+    </button>
+  </div>
 
-  <!-- Healthify Section -->
-  <section id="healthify" class="text-center p-5">
-    <h2>Healthify: Your Virtual Journey to Wellness</h2>
-    <p>Embark on a unique journey to well-being by creating your personalized avatar and engaging in mental health mini-games in our virtual world.</p>
-    <a href="/avatar" class="btn btn-primary">Create Your Avatar</a>
-    <a href="/vWorld" class="btn btn-secondary">Enter the Virtual World</a>
-  </section>
-  
-  
-  <section class="how-it-works bg-light py-5">
+
+  <!--How it works section-->
+  <section id='how-it-works' class="how-it-works bg-light py-5">
     <div class="container">
       <h2 class="text-center mb-4">How It Works</h2>
       <div class="row">
@@ -53,6 +60,14 @@
       </div>
     </div>
   </section>
+
+  <!-- Healthify Section -->
+    <section id="healthify" class="text-center p-5">
+        <h2>Healthify: Your Virtual Journey to Wellness</h2>
+        <p>Embark on a unique journey to well-being by creating your personalized avatar and engaging in mental health mini-games in our virtual world.</p>
+        <a href="/avatar" class="btn btn-primary">Create Your Avatar</a>
+        <a href="/vWorld" class="btn btn-secondary">Enter the Virtual World</a>
+    </section>
   
   <!-- Featured Resources Section -->
   <section class="featured-resources py-5">
@@ -64,7 +79,7 @@
             <div class="card-body">
               <h5 class="card-title">Managing Stress</h5>
               <p class="card-text">Stress, an unavoidable companion in academia, threatens both mental and physical health. At MindWave, we understand this challenge and offer valuable resources to manage it effectively. From relaxation exercises to time management strategies, we're here to help you find balance amid academic demands, by providing proven techniques and support.</p>
-              <a href="/resources" class="btn btn-primary">Read More</a>
+              <a href="/resources#stress" class="btn btn-primary">Read More</a>
             </div>
           </div>
         </div>
@@ -73,7 +88,7 @@
             <div class="card-body">
               <h5 class="card-title">Understanding Anxiety</h5>
               <p class="card-text">Anxiety, a prevalent challenge among students, can often hinder academic progress and overall well-being. Understanding this condition is the first step towards managing it. MindWave provides resources that shed light on anxiety disorders, coping mechanisms, and ways to build resilience. Together, we aim to equip you with the knowledge to face anxiety head-on.</p>
-              <a href="/resources" class="btn btn-primary">Read More</a>
+              <a href="/resources#anxiety" class="btn btn-primary">Read More</a>
             </div>
           </div>
         </div>
@@ -82,7 +97,7 @@
             <div class="card-body">
               <h5 class="card-title">Building Resilience</h5>
               <p class="card-text">Building resilience is about bouncing back stronger when faced with adversity. In the academic world, resilience is a vital trait. MindWave offers insights and practices to help you build resilience, enhancing your ability to overcome challenges and emerge stronger. With the right strategies, you can navigate through the demands of university life while maintaining a positive mental outlook.</p>
-              <a href="/resources" class="btn btn-primary">Read More</a>
+              <a href="/resources#resilience" class="btn btn-primary">Read More</a>
             </div>
           </div>
         </div>
