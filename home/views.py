@@ -1,14 +1,16 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, HttpResponse, redirect
 from datetime import datetime
 from home.models import Contact
 from django.contrib import messages
+from django.contrib.auth.models import User
+from django.contrib.auth import logout, authenticate, login
 
 # Create your views here.
 def index(request):
-    context = {
-        "variable":"My first variable"
-    }
-    return render(request, 'index.html', context)
+    if request.user.is_anonymous:
+        return redirect('/')
+    
+    return render(request, 'index.html')
     #return HttpResponse('This is homepage')
 
 def about(request):
@@ -27,6 +29,41 @@ def contact(request):
         contact.save()
         messages.success(request,"Your message has been sent")
     return render(request, 'contact.html')
+
+def coverpage(request):
+    return render(request, 'coverpage.html')
+
+def signupUser(request):
+    if request.method=="POST":
+        username = request.POST.get('username')
+        email = request.POST.get('email')
+        password = request.POST.get('password')
+        user = User.objects.create_user(username=username, email=email, password=password)
+        messages.success(request,"Sign Up Successful")
+        
+        user = authenticate(username=username, password=password)
+        if user is not None:
+            login(request, user)
+            return redirect('/index')
+    return render(request, 'coverpage.html')
+
+def loginUser(request):
+    if request.method=="POST":
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        user = authenticate(username=username, password=password)
+    
+        if user is not None:
+            login(request, user)
+            messages.success(request,"Login Successful")
+            return redirect("/index")
+        else:
+            messages.error(request, 'Login Unsuccessful')
+            return redirect("/")
+
+def logoutUser(request):
+    logout(request)
+    return redirect('/')
 
 def avatar(request):
     return render(request, 'avatar.html')
