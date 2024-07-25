@@ -82,3 +82,9 @@ def assessment(request):
 
 def resources(request):
     return render(request, 'resources.html')
+
+def game1(request):
+    return render(request, 'game1.html')
+
+def game2(request):
+    return render(request, 'game2.html')
