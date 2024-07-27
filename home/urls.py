@@ -24,4 +24,7 @@ urlpatterns = [
     path('submit_k10', views.submit_k10, name='submit_k10'),
     path('submit_gad7', views.submit_gad7, name='submit_gad7'),
     path('submit_phq9', views.submit_phq9, name='submit_phq9'),
+    path('stressPage', views.stressPage, name='managing_stress'),
+    path('anxietyPage', views.anxietyPage, name='understanding_anxiety'),
+    path('resiliencePage', views.resiliencePage, name='building_resilience'),
 ]

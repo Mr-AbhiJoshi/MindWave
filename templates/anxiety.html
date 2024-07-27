@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+
+{% block title %}Understanding Anxiety{% endblock title %}
+
+{% block body %}
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+  }
+  .container {
+      max-width: 80vw;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+      text-align: center;
+      color: #333;
+  }
+  p, ul {
+      color: #666;
+      line-height: 1.6;
+  }
+  h3 {
+      color: #333;
+      margin-top: 30px;
+  }
+  .infographic, .video {
+      text-align: center;
+      margin: 20px 0;
+  }
+  .infographic img, .video iframe {
+      max-width: 100%;
+  }
+  .download {
+      display: block;
+      margin: 20px 0;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+  }
+  .download:hover {
+      background-color: #0056b3;
+  }
+</style>
+
+<div class="container">
+  <h1><b>Understanding Anxiety</b></h1>
+
+  <h3>Introduction to Anxiety</h3>
+  <p>Anxiety is a feeling of worry, fear, or unease. It can be a normal reaction to stress, but when it becomes excessive, it may lead to anxiety disorders. Common types include Generalized Anxiety Disorder (GAD), Panic Disorder, and Social Anxiety Disorder.</p>
+
+  <h3>How Anxiety Affects the Body and Mind</h3>
+  <p>Anxiety triggers the body's fight-or-flight response, which can cause physical and psychological effects. These may include rapid heartbeat, sweating, restlessness, and constant worry.</p>
+  <ul>
+      <li>Physical symptoms: increased heart rate, muscle tension, dizziness</li>
+      <li>Emotional symptoms: persistent worry, fear, feeling overwhelmed</li>
+      <li>Behavioral symptoms: avoidance of anxiety-provoking situations, trouble concentrating</li>
+  </ul>
+
+  <div class="infographic">
+      <h3>Techniques for Managing Anxiety</h3>
+      <img src="static/anxiety.jpg" width='600' height='450' alt="Infographic on Understanding Anxiety">
+  </div>
+  
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Cognitive Behavioral Therapy (CBT)
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Mindfulness and meditation</strong> can help you stay grounded and reduce stress. Try simple exercises like focusing on your breath or practicing guided meditation.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Mindfulness Practices
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Regular exercise</strong> is a powerful stress reliever. Activities like walking, yoga, and strength training can help you feel better both physically and mentally.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Lifestyle Changes
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Effective time management</strong> can help you prioritize tasks and reduce the feeling of being overwhelmed. Break tasks into smaller steps and set realistic goals.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Seek Professional Help
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>A balanced diet,</strong> adequate sleep, and staying hydrated are essential for managing stress. Avoid excessive caffeine and alcohol consumption.
+              </div>
+            </div>
+          </div>
+          
+  <div class="video">
+      <h3>Anxiety Management Tips Video</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/30VMIEmA114" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <h3>Resources and Support</h3>
+  <ul>
+      <li>Online support communities and forums</li>
+      <li>Contact information for mental health professionals</li>
+      <li>Educational resources on anxiety disorders</li>
+  </ul>
+
+  <a class="download" href="path/to/anxiety-guide.pdf" download>Download Anxiety Management Guide</a>
+</div>
+{% endblock body %}

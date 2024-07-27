@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+
+{% block title %}Managing Stress{% endblock title %}
+
+{% block body %}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
+    .container {
+        max-width: 80vw;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+    p, ul {
+        color: #666;
+        line-height: 1.6;
+    }
+    h3 {
+        color: #333;
+        margin-top: 30px;
+    }
+    .infographic, .video {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .infographic img, .video iframe {
+        max-width: 100%;
+    }
+    .download {
+        display: block;
+        margin: 20px 0;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .download:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<div class="container">
+    <h1><b>Managing Stress</b></h1>
+
+    <h3>Introduction to Stress</h3>
+    <p>Stress is a natural response to challenging or threatening situations. It can be acute, episodic, or chronic, and it affects everyone differently. Common sources of stress include work, relationships, and major life changes.</p>
+
+    <h3>Effects of Stress</h3>
+    <p>Stress can manifest in various physical, emotional, and behavioral symptoms. Long-term stress can lead to serious health problems such as heart disease, depression, and anxiety.</p>
+    <ul>
+        <li>Physical symptoms: headaches, muscle tension, fatigue</li>
+        <li>Emotional symptoms: irritability, anxiety, depression</li>
+        <li>Behavioral symptoms: overeating, insomnia, substance abuse</li>
+    </ul>
+
+    <div class="infographic">
+        <h3>Stress Management Techniques</h3>
+        <img src="static/stress.jpg" width='500' height='400' alt="Infographic on Stress Management Techniques">
+    </div>
+
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Mindfulness and Meditation
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Mindfulness and meditation</strong> can help you stay grounded and reduce stress. Try simple exercises like focusing on your breath or practicing guided meditation.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Physical Activity
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Regular exercise</strong> is a powerful stress reliever. Activities like walking, yoga, and strength training can help you feel better both physically and mentally.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Time Management
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Effective time management</strong> can help you prioritize tasks and reduce the feeling of being overwhelmed. Break tasks into smaller steps and set realistic goals.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Healthy Lifestyle
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>A balanced diet,</strong> adequate sleep, and staying hydrated are essential for managing stress. Avoid excessive caffeine and alcohol consumption.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Relaxation Techniques
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Try techniques </strong> like deep breathing, progressive muscle relaxation, and visualization to help you relax and manage stress.
+              </div>
+            </div>
+          </div>  
+      </div>
+
+    <div class="video">
+        <h3>Relaxation Exercise Video</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QjP9UGWxTLM" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <h3>Practical Tips and Strategies</h3>
+    <ul>
+        <li>Set realistic goals and break tasks into smaller steps.</li>
+        <li>Create a supportive environment by surrounding yourself with positive influences.</li>
+        <li>Seek professional help if needed, such as therapy or counseling.</li>
+    </ul>
+
+    <a class="download" href="path/to/stress-management-plan.pdf" download>Download Stress Management Plan</a>
+</div>
+{% endblock body %}

@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+
+{% block title %}Building resliience{% endblock title %}
+
+{% block body %}
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+  }
+  .container {
+      max-width: 80vw;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+      text-align: center;
+      color: #333;
+  }
+  p, ul {
+      color: #666;
+      line-height: 1.6;
+  }
+  h3 {
+      color: #333;
+      margin-top: 30px;
+  }
+  .infographic, .video {
+      text-align: center;
+      margin: 20px 0;
+  }
+  .infographic img, .video iframe {
+      max-width: 100%;
+  }
+  .download {
+      display: block;
+      margin: 20px 0;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+  }
+  .download:hover {
+      background-color: #0056b3;
+  }
+</style>
+
+<div class="container">
+  <h1><b>Building Resilience</b></h1>
+
+  <h3>What is Resilience?</h3>
+  <p>Resilience is the ability to bounce back from adversity, adapt to challenges, and maintain mental well-being. It involves developing skills and strategies to manage stress and setbacks effectively.</p>
+
+  <h3>Benefits of Resilience</h3>
+  <p>Building resilience can improve your ability to handle stress, recover from difficulties, and maintain a positive outlook on life. Resilient individuals are better equipped to manage challenges and thrive in various situations.</p>
+  <ul>
+      <li>Improved stress management</li>
+      <li>Better emotional regulation</li>
+      <li>Enhanced problem-solving skills</li>
+  </ul>
+
+  <div class="infographic">
+      <h3>Resilience Building Techniques</h3>
+      <img src="static/resilience.jpg" width='600' height='650' alt="Infographic on Building Resilience">
+  </div>
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Positive Thinking
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Mindfulness and meditation</strong> can help you stay grounded and reduce stress. Try simple exercises like focusing on your breath or practicing guided meditation.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Setting Goals
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Regular exercise</strong> is a powerful stress reliever. Activities like walking, yoga, and strength training can help you feel better both physically and mentally.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Developing A Support Network
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Effective time management</strong> can help you prioritize tasks and reduce the feeling of being overwhelmed. Break tasks into smaller steps and set realistic goals.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Practicing Self-care
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>A balanced diet,</strong> adequate sleep, and staying hydrated are essential for managing stress. Avoid excessive caffeine and alcohol consumption.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Problem-solving Exercises
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Try techniques </strong> like deep breathing, progressive muscle relaxation, and visualization to help you relax and manage stress.
+          </div>
+        </div>
+      </div>  
+  </div>
+
+  <div class="video">
+      <h3>Building Resilience Tips Video</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/VNCL1glwyOI" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <h3>Additional Resources</h3>
+  <ul>
+      <li>Books and articles on resilience</li>
+      <li>Workshops and seminars on personal development</li>
+      <li>Online courses and webinars</li>
+  </ul>
+
+  <a class="download" href="path/to/resilience-guide.pdf" download>Download Resilience Building Guide</a>
+</div>
+{% endblock body %}

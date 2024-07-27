@@ -165,3 +165,12 @@ def submit_phq9(request):
         return render(request, 'phq9Test.html', {'score': score, 'feedback': feedback, 'detailed_feedback': detailed_feedback})
         
     return render(request, 'phq9Test.html')
+
+def stressPage(request):
+    return render(request, 'stress.html')
+
+def anxietyPage(request):
+    return render(request, 'anxiety.html')
+
+def resiliencePage(request):
+    return render(request, 'resilience.html')
