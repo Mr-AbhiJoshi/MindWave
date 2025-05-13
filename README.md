@@ -25,16 +25,36 @@
 ## 📁 Project Structure
 
 MindWave/
+
 ├── home/ # Django app containing views and URLs
+
 ├── static/ # Static files (CSS, images)
+
 ├── templates/ # HTML templates
+
 ├── db.sqlite3 # SQLite database
+
 ├── manage.py # Django management script
+
 └── .gitignore # Git ignore file
 
 ## 📸 Screenshots
 
-*Include relevant screenshots here to showcase the UI and features.*
+- **Landing Page**
+![Landing Page of the website](screenshots/landing_page.png)
+
+- **Sign Up Prompt**
+![Sign Up Screen](screenshots/sign_up.png)
+
+- **Sign In Prompt**
+![Sign In Screen](screenshots/sign_in.png)
+
+- **Featured Resources**
+![Featured Resources](screenshots/resources1.png)
+![Featured Resources](screenshots/resources2.png)
+
+- **Assessment Lab**
+![Assessment Lab](screenshots/assessment_lab.png)
 
 ---
 
@@ -45,6 +65,7 @@ Follow these steps to set up and run the project locally:
 ### 1. Clone the Repository
 
 git clone https://github.com/Mr-AbhiJoshi/MindWave.git
+
 cd MindWave
 
 ### 2. Create a Virtual Environment
@@ -65,8 +86,7 @@ source env/bin/activate
 
 pip install -r requirements.txt
 
-#### Note: 
-If requirements.txt is not present, install Django manually:
+#### Note:If requirements.txt is not present, install Django manually:
 
 pip install django
 
@@ -83,6 +103,7 @@ Access the application at: http://127.0.0.1:8000/
 ## 🧑‍💻 Author
 
 Abhishek Joshi
+
 Aspiring Software Engineer | Full-Stack Developer
 
 📍 Wollongong, New South Wales, Australia
